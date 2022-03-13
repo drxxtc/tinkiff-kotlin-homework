@@ -1,7 +1,7 @@
-class Senpai(override val name: String, override val role: String): Marks_report {
+class Senpai(override val name: String, override val role: String): MarksReport {
     //    тоже самое - nullable здесь не нужен, ты всегда инициализируешь айдишник. но это не айдишник, т.к.
 //    он всегда будет одинаковым. либо как-то генерируй его случайно, либо ещё что-то можно придумать
-    private val number= Math.random()
+    val number= Math.random()
 
     // общее замечание - методы всегда называем в camelCase (e.g. printData())
     override fun printData(){
@@ -9,7 +9,5 @@ class Senpai(override val name: String, override val role: String): Marks_report
     }
     fun takeId(){
         println("Идентификационный номер преподавателя: $number")
-    }
-    fun getProgramm(){
     }
 }
