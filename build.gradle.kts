@@ -14,6 +14,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    implementation("org.mockito:mockito-all:1.10.19")
+    implementation("org.mockito:mockito-core:4.3.1")
+    testImplementation("io.mockk:mockk:1.12.3")
 }
 
 tasks.test {
